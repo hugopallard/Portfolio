@@ -1,0 +1,10 @@
+body {
+  background-color: #f7f7f7;
+}
+#landingPage {
+  height: 100vh;
+  min-height: 300px;
+}
+#about {
+  background-color: rgb(221, 221, 221);
+}
