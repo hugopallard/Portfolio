@@ -1,10 +1,30 @@
 body {
   background-color: #f7f7f7;
 }
-#landingPage {
-  height: 100vh;
-  min-height: 300px;
+@media (max-width: 425px) {
+  /* CSS that should be displayed if width is equal to or less than 425px goes here */
+  #landingPage {
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #inner {
+    display: inline-flex;
+  }
 }
+@media (min-width: 425px) {
+  /* CSS that should be displayed if width is equal to or greater than 425px goes here */
+  #landingPage {
+    height: 100vh;
+  }
+  #inner {
+    height: 100%;
+  }
+}
+
 #about {
+  background-color: rgb(221, 221, 221);
+}
+#projects {
   background-color: rgb(221, 221, 221);
 }
