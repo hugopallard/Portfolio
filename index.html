@@ -42,7 +42,7 @@
                 <a
                   class="nav-link active text-center"
                   aria-current="page"
-                  href="#"
+                  href="#about"
                   >About</a
                 >
               </li>
@@ -50,7 +50,7 @@
                 <a
                   class="nav-link active text-center"
                   aria-current="page"
-                  href="#"
+                  href="#projects"
                   >My Projects</a
                 >
               </li>
@@ -58,7 +58,7 @@
                 <a
                   class="nav-link active text-center"
                   aria-current="page"
-                  href="#"
+                  href="#footer"
                   >Contact me !</a
                 >
               </li>
@@ -68,77 +68,62 @@
       </nav>
     </section>
     <header>
-      <div class="pt-5 text-center" id="landingPage">
-        <div class="row g-4" id="inner">
-          <div class="col-12 d-flex justify-content-center">
+      <div class="container-fluid text-center d-flex align-items-center justify-content-center" id="landingPage">
+        <div class="row">
+          <div class="col-12 col-lg-5 mb-5">
             <img
               src="profilPicture.png"
               class="img-fluid"
               alt="profil picture"
             />
           </div>
-          <div class="col-12 d-block justify-content-center">
+          <div class="col-12 col-lg-7" id="introText">
             <h6>Hi there! I'm</h6>
             <h1>HUGO PALLARD</h1>
-            <h5 class="mb-5">I study software engineering</h5>
-            <button type="button" class="btn btn-dark">Have a look</button>
+            <h5 class="mb-5">I study software engineering, mostly back-end development, and this is my portfolio</h5>
+            <a href="#about"><button type="button" class="btn btn-dark">Have a look</button></a>
           </div>
         </div>
       </div>
-
-      <!-- <div class="row justify-content-center" id="social">
-        <div class="col-2">
-          <img src="linkedin.png" alt="" class="img-fluid" />
-        </div>
-        <div class="col-2">
-          <img src="instagram.png" alt="" class="img-fluid" />
-        </div>
-        <div class="col-2">
-          <img src="github.png" alt="" class="img-fluid" />
-        </div>
-      </div> -->
     </header>
 
-    <section class="p-2 p-lg-3" id="about">
-      <h2 class="text-center text-decoration-underline">About me</h2>
-      <div class="p-2 p-lg-3 text-center">
-        <p>
-          I am a student at EPF School of Engineering. I am in 3rd year and what
-          you are looking at is my first professional website !
+    <section class="pt-5 pb-5 ps-2 pe-2" id="about">
+      <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">About me</h2>
+      <div class="container p-2 p-lg-3" id="aboutText">
+        <p class="p-3 fw-bold">
+          I am a 3rd year student at EPF School of Engineering and this year I am finishing my BSc in General Engineering. In Septembre 2022, I will specialize in Computer Science.
+          <span id="lookingFor"> I am actively looking for an internship in software development or software engineering. </span> This would be my first technical internship, have a look at my Linkedin below
+          to learn more about my scholar background.
         </p>
       </div>
     </section>
-    <section class="p-2 p-lg-3" id="skills">
-      <div class="text-center text-decoration-underline">
-        <h2>My skills</h2>
-      </div>
-      <div class="container">
-        <div class="row g-4 p-4 g-lg-5 p-lg-5">
-          <div class="col-4 col-md-2">
-            <img src="icons/java.png" class="img-fluid" alt="..." />
+    <section class="pt-5 pb-5 ps-2 pe-2" id="skills">
+      <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">My skills</h2>
+      <div class="container p-2 p-lg-3 text-center" id="skillsIcons">
+        <div class="row p-2 p-lg-5 g-4">
+          <div class="col-4 col-md-2 " >
+            <img src="icons/java.png" class="img-fluid" id="skillItem" alt="..." />
           </div>
           <div class="col-4 col-md-2">
-            <img src="icons/bootstrap.png" class="img-fluid" alt="..." />
+            <img src="icons/bootstrap.png" class="img-fluid" id="skillItem" alt="..." />
           </div>
           <div class="col-4 col-md-2">
-            <img src="icons/html.png" class="img-fluid" alt="..." />
+            <img src="icons/html.png" class="img-fluid" id="skillItem" alt="..." />
           </div>
           <div class="col-4 col-md-2">
-            <img src="icons/mysql.png" class="img-fluid" alt="..." />
+            <img src="icons/mysql.png" class="img-fluid" id="skillItem" alt="..." />
           </div>
           <div class="col-4 col-md-2">
-            <img src="icons/python.png" class="img-fluid" alt="..." />
+            <img src="icons/python.png" class="img-fluid" id="skillItem" alt="..." />
           </div>
           <div class="col-4 col-md-2">
-            <img src="icons/css.png" class="img-fluid" alt="..." />
+            <img src="icons/css.png" class="img-fluid" id="skillItem" alt="..." />
           </div>
         </div>
       </div>
     </section>
-    <section class="p-2 p-lg-3" id="projects">
-      <div class="text-center text-decoration-underline mb-4">
-        <h2>Projects</h2>
-      </div>
+    <section class="pt-5 pb-5 ps-2 pe-2" id="projects">
+      <h2 class="text-center text-decoration-underline pb-3" id="titleStyling" >Projects</h2>
       <div class="container">
         <div class="row g-3 g-lg-4">
           <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center text-center">
@@ -164,7 +149,7 @@
                 <a href="https://github.com/hugopallard/Jeu-du-Trinome" class="btn btn-dark">Discover</a>
               </div>
             </div>
-        </div>
+          </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center text-center">
           <div class="card" style="width: 18rem">
             <img src="fruitBasketMiniature.png" class="card-img-top" alt="..." />
@@ -176,15 +161,69 @@
               <a href="https://github.com/hugopallard/Jeu-du-Trinome" class="btn btn-dark">Discover</a>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </section>
-    <section id="contact"></section>
-    <nav class="navbar sticky-bottom navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Contact me</a>
+    <footer class="bg-dark " id="footer"> 
+      <div class="text-decoration-underline text-center"> 
+        <h2  id="contactTitleStyling">Get in touch</h2>
       </div>
-    </nav>
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 text-center pt-5 pb-5">
+            <form action="mailto:hugopallard2@yahoo.fr"
+            method="POST"
+            enctype="multipart/form-data"
+            > 
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Name*" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email*" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <textarea type="email" class="form-control" id="exampleInputEmail1" placeholder="Your message*" aria-describedby="emailHelp"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-12 text-center">
+            <div class="row pt-5 pb-5">
+              <div class="col-12 mb-3">
+                <a href="https://www.linkedin.com/in/hugo-pallard/?locale=en_US"  style="color: white; text-decoration: none;">
+                  <img
+                  src="linkedin.png"
+                  alt=""
+                  width="30"
+                  class="d-inline-block align-text-top me-2"
+                />
+                My LinkedIn</a>
+              </div>
+              <div class="col-12 mb-3">
+                <a href="https://github.com/hugopallard"  style="color: white; text-decoration: none;">
+                  <img
+                  src="github.png"
+                  alt=""
+                  width="30"
+                  class="d-inline-block align-text-top me-2"
+                />
+                My GitHub</a>
+              </div>
+              <div class="col-12 mb-3">
+                <a href="https://www.instagram.com/hugo_pal/" style="color: white; text-decoration: none;">
+                  <img
+                  src="instagram.png"
+                  alt=""
+                  width="30"
+                  class="d-inline-block align-text-top me-2"
+                />
+                My Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -193,3 +232,6 @@
   </body>
 </html>
 
+<div>
+  
+</div>
