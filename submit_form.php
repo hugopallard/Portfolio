@@ -1,7 +1,8 @@
 <?php
 try
 {
-	$db = new PDO('mysql:host=localhost;dbname=portfolioDB;charset=utf8', 'root', 'root');
+	// $db = new PDO('mysql:host=localhost;dbname=id18373296_messages;charset=utf8', 'id18373296_root', 'c+Lt{7Tj>u%q_X]>'); // For online use
+        $db = new PDO('mysql:host=localhost;dbname=portfoliodb', 'root', 'root'); // For local use (USING MAMP root root)
 }
 catch (Exception $e)
 {
@@ -10,8 +11,8 @@ catch (Exception $e)
 
 $Name = $_POST['name'];
 $Email = $_POST['email'];
-$Categorie = $_POST['message'];
-$Dropdown = $_POST['dropdown'];
+$Categorie = $_POST['dropdown'];
+$Message = $_POST['message'];
 
 // Ecriture de la requête
 $request = $db->prepare('INSERT INTO messages(Name, Email, Categorie, Message) VALUES (:Name, :Email, :Categorie, :Message)');
@@ -21,7 +22,7 @@ $request->execute([
     'Name' => $Name,
     'Email' => $Email,
     'Categorie' => $Categorie,
-    'Message' => $Dropdown,
+    'Message' => $Message,
 ]);
 ?>
 
@@ -38,7 +39,7 @@ $request->execute([
     </div>
 </div> -->
 
-<form action="index.php" id="goBackForm" method="POST">
+<form action="index.html" id="goBackForm" method="POST">
 </form>
 <script type="text/javascript">
 document.getElementById('goBackForm').submit();
