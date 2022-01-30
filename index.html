@@ -1,237 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Hugo's portofolio</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <section id="navbar">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="chick.png"
-              alt=""
-              width="30"
-              class="d-inline-block align-text-top"
-            />
-            Find out more !
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-center"
-                  aria-current="page"
-                  href="#about"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-center"
-                  aria-current="page"
-                  href="#projects"
-                  >My Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-center"
-                  aria-current="page"
-                  href="#footer"
-                  >Contact me !</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    Hp
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-center" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-center" aria-current="page" href="#projects">My Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-center" aria-current="page" href="#footer">Contact me !</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </section>
     <header>
-      <div class="container-fluid text-center d-flex align-items-center justify-content-center" id="landingPage">
-        <div class="row">
-          <div class="col-12 col-lg-5 mb-5">
-            <img
-              src="profilPicture.png"
-              class="img-fluid"
-              alt="profil picture"
-            />
-          </div>
-          <div class="col-12 col-lg-7" id="introText">
-            <h6>Hi there! I'm</h6>
-            <h1>HUGO PALLARD</h1>
-            <h5 class="mb-5">I study software engineering, mostly back-end development, and this is my portfolio</h5>
-            <a href="#about"><button type="button" class="btn btn-dark">Have a look</button></a>
-          </div>
+        <div class="container-fluid text-center d-flex align-items-center justify-content-center" id="landingPage">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 -mb-5">
+                    <img src="profilPicture.png" class="img-fluid mb-3" alt="profil picture" />
+                    <div id="introText">
+                        <h6>Hi there! I'm</h6>
+                        <h1>HUGO PALLARD</h1>
+                        <h5 class="mb-5">I study software engineering, mostly back-end development</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mb-5">
+                    <img src="landingImage.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 d-flex align-items-center justify-content-center">
+                    <a href="#about"><button type="button" class="btn btn-dark">Have a look</button></a>
+                </div>
+
+            </div>
         </div>
-      </div>
     </header>
 
     <section class="pt-5 pb-5 ps-2 pe-2" id="about">
-      <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">About me</h2>
-      <div class="container p-2 p-lg-3" id="aboutText">
-        <p class="p-3 fw-bold">
-          I am a 3rd year student at EPF School of Engineering and this year I am finishing my BSc in General Engineering. In Septembre 2022, I will specialize in Computer Science.
-          <span id="lookingFor"> I am actively looking for an internship in software development or software engineering. </span> This would be my first technical internship, have a look at my Linkedin below
-          to learn more about my scholar background.
-        </p>
-      </div>
+        <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">About me</h2>
+        <div class="container p-2 p-lg-3" id="aboutText">
+            <p class="p-3 fw-bold">
+                I am a 3rd year student at EPF School of Engineering and this year I am finishing my BSc in General
+                Engineering. In Septembre 2022, I will specialize in Computer Science.
+                <span id="lookingFor"> I am actively looking for an internship in software development or software
+                    engineering. </span> This would be my first technical internship, have a look at my Linkedin below
+                to learn more about my scholar background.
+            </p>
+        </div>
     </section>
     <section class="pt-5 pb-5 ps-2 pe-2" id="skills">
-      <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">My skills</h2>
-      <div class="container p-2 p-lg-3 text-center" id="skillsIcons">
-        <div class="row p-2 p-lg-5 g-4">
-          <div class="col-4 col-md-2 " >
-            <img src="icons/java.png" class="img-fluid" id="skillItem" alt="..." />
-          </div>
-          <div class="col-4 col-md-2">
-            <img src="icons/bootstrap.png" class="img-fluid" id="skillItem" alt="..." />
-          </div>
-          <div class="col-4 col-md-2">
-            <img src="icons/html.png" class="img-fluid" id="skillItem" alt="..." />
-          </div>
-          <div class="col-4 col-md-2">
-            <img src="icons/mysql.png" class="img-fluid" id="skillItem" alt="..." />
-          </div>
-          <div class="col-4 col-md-2">
-            <img src="icons/python.png" class="img-fluid" id="skillItem" alt="..." />
-          </div>
-          <div class="col-4 col-md-2">
-            <img src="icons/css.png" class="img-fluid" id="skillItem" alt="..." />
-          </div>
+        <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">My skills</h2>
+        <div class="container p-2 p-lg-3 text-center" id="skillsIcons">
+            <div class="row p-2 p-lg-3 g-5">
+                <div class="col-4 col-md-2 ">
+                    <img src="icons/java.png" class="img-fluid" id="skillItem" alt="..." />
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="icons/bootstrap.png" class="img-fluid" id="skillItem" alt="..." />
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="icons/html.png" class="img-fluid" id="skillItem" alt="..." />
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="icons/mysql.png" class="img-fluid" id="skillItem" alt="..." />
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="icons/python.png" class="img-fluid" id="skillItem" alt="..." />
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="icons/css.png" class="img-fluid" id="skillItem" alt="..." />
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <section class="pt-5 pb-5 ps-2 pe-2" id="projects">
-      <h2 class="text-center text-decoration-underline pb-3" id="titleStyling" >Projects</h2>
-      <div class="container">
-        <div class="row g-3 g-lg-4">
-          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem">
-              <img src="pathFindingMiniature.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Pathfinding</h5>
-                <p class="card-text">
-                  My most challenging project so far, 15,000+ views and 450+ reactions on LinkedIn. 7 stars on GitHub [INSERT TECH USED]
-                </p>
-                <a href="https://github.com/hugopallard/A-Star" class="btn btn-dark">Discover</a>
-              </div>
+        <h2 class="text-center text-decoration-underline pb-3" id="titleStyling">Projects</h2>
+        <div class="container">
+            <div class="row g-3 g-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center text-center">
+                    <div class="card" style="width: 18rem">
+                        <img src="pathFindingMiniature.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Pathfinding</h5>
+                            <p class="card-text">
+                                My most challenging project so far, 15,000+ views and 450+ reactions on LinkedIn. 7
+                                stars on GitHub [INSERT TECH USED]
+                            </p>
+                            <a href="https://github.com/hugopallard/A-Star" class="btn btn-dark">Discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center text-center">
+                    <div class="card" style="width: 18rem">
+                        <img src="trinomeMiniature.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Trinome Game</h5>
+                            <p class="card-text">
+                                Think of it as a game of chess. You can save and load a board, dark mode, go-back one
+                                move... [INSERT TECH USED]
+                            </p>
+                            <a href="https://github.com/hugopallard/Jeu-du-Trinome" class="btn btn-dark">Discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center text-center">
+                    <div class="card" style="width: 18rem">
+                        <img src="fruitBasketMiniature.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Fruit Basket</h5>
+                            <p class="card-text">
+                                Very first IT project, basketball game with trajectories, weight, levels... [INSERT TECH
+                                USED]
+                            </p>
+                            <a href="https://github.com/hugopallard/Jeu-du-Trinome" class="btn btn-dark">Discover</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem">
-              <img src="trinomeMiniature.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Trinome Game</h5>
-                <p class="card-text">
-                  Think of it as a game of chess. You can save and load a board, dark mode, go-back one move... [INSERT TECH USED]
-                </p>
-                <a href="https://github.com/hugopallard/Jeu-du-Trinome" class="btn btn-dark">Discover</a>
-              </div>
-            </div>
-          </div>
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center text-center">
-          <div class="card" style="width: 18rem">
-            <img src="fruitBasketMiniature.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Fruit Basket</h5>
-              <p class="card-text">
-                Very first IT project, basketball game with trajectories, weight, levels... [INSERT TECH USED]
-              </p>
-              <a href="https://github.com/hugopallard/Jeu-du-Trinome" class="btn btn-dark">Discover</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <footer class="bg-dark " id="footer"> 
-      <div class="text-decoration-underline text-center"> 
-        <h2  id="contactTitleStyling">Get in touch</h2>
-      </div>
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 text-center pt-5 pb-5">
-            <form action="mailto:hugopallard2@yahoo.fr"
-            method="POST"
-            enctype="multipart/form-data"
-            > 
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Name*" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email*" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <textarea type="email" class="form-control" id="exampleInputEmail1" placeholder="Your message*" aria-describedby="emailHelp"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-          <div class="col-12 text-center">
-            <div class="row pt-5 pb-5">
-              <div class="col-12 mb-3">
-                <a href="https://www.linkedin.com/in/hugo-pallard/?locale=en_US"  style="color: white; text-decoration: none;">
-                  <img
-                  src="linkedin.png"
-                  alt=""
-                  width="30"
-                  class="d-inline-block align-text-top me-2"
-                />
-                My LinkedIn</a>
-              </div>
-              <div class="col-12 mb-3">
-                <a href="https://github.com/hugopallard"  style="color: white; text-decoration: none;">
-                  <img
-                  src="github.png"
-                  alt=""
-                  width="30"
-                  class="d-inline-block align-text-top me-2"
-                />
-                My GitHub</a>
-              </div>
-              <div class="col-12 mb-3">
-                <a href="https://www.instagram.com/hugo_pal/" style="color: white; text-decoration: none;">
-                  <img
-                  src="instagram.png"
-                  alt=""
-                  width="30"
-                  class="d-inline-block align-text-top me-2"
-                />
-                My Instagram</a>
-              </div>
-            </div>
-          </div>
+    <footer class="bg-dark " id="footer">
+        <div class="text-decoration-underline text-center pt-3">
+            <h2 id="contactTitleStyling">Get in touch</h2>
         </div>
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 text-center pt-5 pb-4">
+                    <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <input class="form-control" name="name" placeholder="Your Name*" aria-describedby="nameHelp"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email"
+                                placeholder="Your Email* (so I can contact you)" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control" name="dropdown" required>
+                                <option value="internship_proposal" selected>Internship proposal</option>
+                                <option value="general_question">General Question</option>
+                                <option value="bug_issue">Found a bug</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" required>
+                            <textarea type="email" class="form-control" name="message" placeholder="Your message*"
+                                aria-describedby="messageHelp"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  text-center">
+                    <div class="row pt-4 pb-4 pt-md-5">
+                        <div class="col-12 mb-4">
+                            <a href="https://www.linkedin.com/in/hugo-pallard/?locale=en_US"
+                                style="color: white; text-decoration: none;">
+                                <img src="linkedin.png" alt="" width="30" class="d-inline-block align-text-top me-2" />
+                                My LinkedIn</a>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <a href="https://github.com/hugopallard" style="color: white; text-decoration: none;">
+                                <img src="github.png" alt="" width="30" class="d-inline-block align-text-top me-2" />
+                                My GitHub</a>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <a href="https://www.instagram.com/hugo_pal/" style="color: white; text-decoration: none;">
+                                <img src="instagram.png" alt="" width="30" class="d-inline-block align-text-top me-2" />
+                                My Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 text-center">
+                    <div class="row pt-4 pb-4 pt-md-5">
+                        <div class="col-12 mb-2">
+                            <p>Fontenay-aux-Roses, FAR 92260, FR</p>
+
+                        </div>
+                        <div class="col-12 mb-2">
+                            <p>hugo.pallard@epfedu.fr</p>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <p>+33 (0)6 95 50 16 82</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    © Hugo Pallard 2022
+                </div>
+            </div>
+        </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
 
 <div>
-  
+
 </div>
